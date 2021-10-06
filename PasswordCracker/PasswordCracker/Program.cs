@@ -6,6 +6,15 @@ using System.Text;
 
 namespace PasswordCracker
 {
+    /// <summary>
+    /// A list of md5 hashed passwords is contained within the passwords_hashed.txt file.  Your task
+    /// is to crack each of the passwords.  Your input will be an array of strings obtained by reading
+    /// in each line of the text file and your output will be validated by passing an array of the
+    /// cracked passwords to the Validator.ValidateResults() method.  This method will compute a SHA256
+    /// hash of each of your solved passwords and compare it against a list of known hashes for each
+    /// password.  If they match, it means that you correctly cracked the password.  Be warned that the
+    /// test is ALL or NOTHING.. so one wrong password means the test fails.
+    /// </summary>
     class Program
     {
         public static string md5(string input)
